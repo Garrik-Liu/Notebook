@@ -3,11 +3,13 @@ import { searchPlugin } from "@vuepress/plugin-search";
 
 module.exports = {
   title: "Garrik 的笔记",
+  base: "/notebook/",
   theme: hopeTheme({
+    sidebar: "structure",
     navbar: [
       {
-        text: '主页',
-        link: '/',
+        text: "主页",
+        link: "/",
       },
       {
         text: "Github",
@@ -19,7 +21,6 @@ module.exports = {
     themeColor: {
       blue: "#2196f3",
       red: "#f26d6d",
-      green: "#3eaf7c",
       orange: "#fb9b5f",
     },
   }),
