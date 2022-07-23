@@ -1,5 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { searchPlugin } from "@vuepress/plugin-search";
+import HorizontalDisplay from "./plugins/HorizontalDisplay";
 
 module.exports = {
   title: "Garrik 的笔记",
@@ -17,7 +18,14 @@ module.exports = {
         target: "blank",
         rel: "",
       },
+
     ],
+    plugins: {
+      copyCode: {},
+      mdEnhance: {
+        enableAll: true,
+      },
+    },
     themeColor: {
       blue: "#2196f3",
       red: "#f26d6d",
@@ -26,5 +34,6 @@ module.exports = {
   }),
   plugins: [
     searchPlugin({}),
+    HorizontalDisplay(),
   ],
 }

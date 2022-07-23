@@ -1,0 +1,25 @@
+.horizontal-display {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  p, div {
+    margin: 5px;
+    flex: 1;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &.start {
+    p, div {
+      justify-content: flex-start;
+    }
+  }
+
+  &.end {
+    p, div {
+      justify-content: flex-end;
+    }
+  }
+}
